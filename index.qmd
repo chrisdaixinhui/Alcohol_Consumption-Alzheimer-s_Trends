@@ -70,10 +70,10 @@ library(ggplot2)
 library(dplyr)
 
 # Load the reparsed NIAAA Alcohol Consumption data
-alcohol_data <- read_csv("alcohol2015_2022_with_location.csv")
+alcohol_data <- read_csv("dataset/alcohol2015_2022_with_location.csv")
 
 # Load your CDC Alzheimer's data (replace with your actual filename)
-alzheimer_data <- read_csv("Alzheimer's_Disease_and_Healthy_Aging_Indicators__Cognitive_Decline_20260216.csv")
+alzheimer_data <- read_csv("dataset/Alzheimer's_Disease_and_Healthy_Aging_Indicators__Cognitive_Decline_20260216.csv")
 
 alcohol_clean <- alcohol_data %>%
   filter(beverage_name == "All beverages") %>%
